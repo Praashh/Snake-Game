@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Oswald&family=Source+Code+Pro:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+.body{
+    background: url("../bg.webp");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#scoreBox{
+    position: absolute;
+    top: 9px;
+    right: 200px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Source Code Pro', monospace;
+}
+#highscoreBox{
+    position: absolute;
+    top: 80px;
+    right: 100px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Source Code Pro', monospace;
+}
+#board{
+    background: linear-gradient(rgb(142, 221, 142), rgb(214, 214, 132));
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns: repeat(18,1fr);
+}
+.head{
+    background : linear-gradient(rgb(182, 96, 96) ,green);
+    border: 2px solid rgb(68, 49, 33);
+    transform: scale(1.02);
+    border-radius: 8px;
+}
+.snake{
+    background-color: purple;
+    border: .25vmin solid rgb(68, 49, 33);
+    border-radius: 12px;
+}
+.food{
+    background: linear-gradient(red,purple);
+    border: .25vmin solid rgb(68, 49, 33);
+    border-radius: 18px;
+
+}
